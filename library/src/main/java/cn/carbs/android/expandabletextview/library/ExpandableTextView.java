@@ -504,8 +504,8 @@ public class ExpandableTextView extends TextView{
             } else {
                 if (mPressedSpan != null) {
                     mPressedSpan.setPressed(false);
-                    super.onTouchEvent(textView, spannable, event);
                 }
+                super.onTouchEvent(textView, spannable, event);
                 mPressedSpan = null;
                 Selection.removeSelection(spannable);
             }
